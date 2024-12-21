@@ -2,6 +2,7 @@
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
     "strict": true,
+    "allowJs": true, // Habilitar soporte para .js y .jsx
     "paths": {
       "@/*": [
         "./*"
@@ -11,6 +12,8 @@
   "include": [
     "**/*.ts",
     "**/*.tsx",
+    "**/*.js",
+    "**/*.jsx", // Incluir archivos .jsx en el proyecto
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
   ]
